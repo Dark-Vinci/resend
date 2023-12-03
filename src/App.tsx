@@ -1,11 +1,13 @@
 import React, { JSX } from 'react';
+
 import './App.scss';
+import {Home} from "./components";
 
 function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>This is soon to be resend page</h1>
+        <Home />
       </header>
     </div>
   );
