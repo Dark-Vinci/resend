@@ -11,29 +11,31 @@ import {Header} from "./header";
 export function Home(): JSX.Element {
     return (
         <div className={style.container}>
-            <section className={style.nav}>
+            <header className={style.nav}>
                 <Navigation />
-            </section>
+            </header>
 
-            <section className={style.header}>
-                <Header />
-            </section>
+            <body>
+                <section className={style.header}>
+                    <Header />
+                </section>
 
-            <section className={style.body}>
-                <Body />
-            </section>
+                <section className={style.body}>
+                    <Body />
+                </section>
 
-            <section className={style.mid}>
-                <Mid />
-            </section>
+                <section className={style.mid}>
+                    <Mid />
+                </section>
 
-            <section className={style.other}>
-                <Other />
-            </section>
+                <section className={style.other}>
+                    <Other />
+                </section>
+            </body>
 
-            <section className={style.footer}>
+            <footer className={style.footer}>
                 <Footer />
-            </section>
+            </footer>
         </div>
     );
 }
