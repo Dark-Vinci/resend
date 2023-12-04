@@ -11,14 +11,14 @@ import {Header} from "./header";
 export function Home(): JSX.Element {
     return (
         <div className={style.container}>
-            <header className={style.nav}>
+            <nav className={style.nav}>
                 <Navigation />
-            </header>
+            </nav>
 
             <body>
-                <section className={style.header}>
+                <header className={style.header}>
                     <Header />
-                </section>
+                </header>
 
                 <section className={style.body}>
                     <Body />
@@ -31,11 +31,11 @@ export function Home(): JSX.Element {
                 <section className={style.other}>
                     <Other />
                 </section>
-            </body>
 
-            <footer className={style.footer}>
-                <Footer />
-            </footer>
+                <footer className={style.footer}>
+                    <Footer />
+                </footer>
+            </body>
         </div>
     );
 }
